@@ -1,7 +1,7 @@
 What is it?
 ===========
 
-A HTML page content type for LFC `LFC <http://pypi.python.org/pypi/django-lfc/>`_
+A HTML page content type for `LFC <http://pypi.python.org/pypi/django-lfc/>`_
 
 Changes
 =======
