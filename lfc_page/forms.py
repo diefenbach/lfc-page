@@ -3,6 +3,7 @@ from django import forms
 
 # lfc imports
 from lfc.fields.autocomplete import AutoCompleteTagInput
+from lfc.fields.wysiwyg import WYSIWYGInput
 
 # tagging imports
 from tagging.forms import TagField
@@ -18,4 +19,8 @@ class PageDataForm(forms.ModelForm):
 
     class Meta:
         model = Page
-        fields = ("title", "display_title", "slug", "description", "text_type", "text", "tags")
+        fields = ("title", "display_title", "slug", "description", "text", "tags")
+
+    def __init__(self, *args, **kwargs):
+        super(PageDataForm, self).__init__(*args, **kwargs)
+        self.fields["text"].widget = WYSIWYGInput()
