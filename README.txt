@@ -1,9 +1,12 @@
 What is it?
 ===========
 
-A HTML page content type for `LFC <http://pypi.python.org/pypi/django-lfc/>`_
+HTML page content type for `LFC <http://pypi.python.org/pypi/django-lfc/>`_
 
 Changes
 =======
 
-No public release yet.
+1.0 (2014-06-17)
+----------------
+
+* Initial public release
