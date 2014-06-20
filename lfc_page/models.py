@@ -6,12 +6,6 @@ from django.utils.translation import ugettext_lazy as _
 import lfc.utils
 from lfc.models import BaseContent
 
-# lfc_page imports
-from lfc_page.interfaces import IPage
-
-# zope imports
-from zope.interface import implements
-
 
 class Page(BaseContent):
     """
@@ -22,8 +16,6 @@ class Page(BaseContent):
     text:
         The main text of the Page.
     """
-    implements(IPage)
-
     text = models.TextField(_(u"Text"), blank=True)
 
     def get_searchable_text(self):
