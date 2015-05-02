@@ -13,7 +13,7 @@ description = _(u"HTML pages for LFC")
 
 
 def install():
-    """Installs the blog application.
+    """Installs the page application.
     """
     # Register objects
     register_content_type(
@@ -25,7 +25,7 @@ def install():
 
 
 def uninstall():
-    """Uninstalls the blog application.
+    """Uninstalls the page application.
     """
     # Unregister content type
     unregister_content_type("Page")
